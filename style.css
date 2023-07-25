@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap");
+/* font-family: 'Bacasime Antique', serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./img/micro_carbon.png);
+  font-family: "Roboto", sans-serif;
+}
+.cabecero {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+.logo {
+  margin-top: 20px;
+  cursor: pointer;
+  margin-right: auto;
+  /* es un efecto para el mouse que aparece la manito cuando lo paso */
+}
+.logo img {
+  height: 100px;
+  transition: all 0.3s;
+}
+/* transicion y transform trabajan juntas dan la sensacion de latido en una imagen en este ejemplo  */
+.logo img:hover {
+  transform: scale(1.2);
+}
+.nav-links {
+  list-style: none;
+
+  /* saca los puntos de la ul */
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 400;
+}
+.nav-links li a {
+  color: rgb(235, 222, 222);
+  text-decoration: none;
+}
+.btn {
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 800;
+  color: rgb(234, 229, 229);
+  padding: 6px 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.container1 {
+  display: flex;
+  height: 550px;
+  width: 100%;
+  height: 971px;
+  justify-content: center;
+  padding: 0 40px;
+  margin: 0 auto;
+  max-width: 1350px;
+}
+.gaseosa {
+  width: 100%px;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.gaseosa_pic {
+  display: flex;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.gaseosa_pic:hover {
+  /* transform: scale(1.2); */
+  /* transform: rotate3d(1, 1, 1, 45deg); */
+  /* transform: scale3d(1.2, 0.8, 1.5); */
+  transform: translate3d(100px, -50px, 200px);
+  /* transform: skew(20deg, -10deg); */
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 600;
+  height: 600px;
+  font-size: 72px;
+  margin: 0 0 45px;
+  color: aliceblue;
+}
+
+.container2 {
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 150px;
+  padding: 80px 0;
+}
+
+.caja {
+  -webkit-box-shadow: 29px -17px 59px 2px rgba(73, 90, 66, 0.63);
+  -moz-box-shadow: 29px -17px 59px 2px rgba(73, 90, 66, 0.63);
+  box-shadow: 29px -17px 59px 2px rgba(73, 90, 66, 0.63);
+  height: 700px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+.cont_image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.image {
+  display: flex;
+  width: 200px;
+  height: auto;
+}
+.card_text {
+  color: aliceblue;
+  text-align: center;
+  padding: 8px;
+  margin: 5px;
+}
+.title {
+  padding: 10px;
+}
+
+.caja1 {
+  background-color: orange;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.caja1:hover {
+  transform: scale(1.2);
+}
+
+.caja2 {
+  background-color: firebrick;
+  height: 750px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.caja2:hover {
+  transform: scale(1.2);
+}
+
+.caja3 {
+  background-color: limegreen;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.caja3:hover {
+  transform: scale(1.2);
+}
+.container3 {
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding: 80px 0;
+  text-align: center;
+  background-image: url(./img/viktor-forgacs-WHusHiMMx6s-unsplash.jpg);
+  background-position: center;
+  background-size: contain;
+}
+.descansotext {
+  display: flex;
+  font-size: 72px;
+  margin: 0 0 45px;
+  color: aliceblue;
+}
+.descanso_text2 {
+  color: aliceblue;
+  padding: 10px;
+}
+.descanso_title {
+  font-size: 50px;
+}
+.descanso_p {
+  padding: 20px;
+  font-size: 25px;
+}
+.descanso_btn a {
+  text-decoration: none;
+  color: rebeccapurple;
+  font-weight: 800;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+.descanso_btn {
+  cursor: pointer;
+  padding: 6px 15px;
+  border-radius: 85% 21% 58% 34%;
+  -webkit-box-shadow: 11px 2px 26px -4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 11px 2px 26px -4px rgba(0, 0, 0, 1);
+  box-shadow: 11px 2px 26px -4px rgb(239, 232, 232);
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: rgba(218, 15, 213, 0.92);
+  background-image: linear-gradient(
+    90deg,
+    rgba(218, 15, 213, 0.92) 0%,
+    rgba(236, 139, 46, 1) 50%,
+    rgba(165, 7, 87, 0.92) 100%
+  );
+}
+.descanso_btn:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(0.9) rotate(23deg) translate(7px, 7px)
+    skew(52deg, -31deg);
+  -moz-transform: scale(0.9) rotate(23deg) translate(7px, 7px)
+    skew(52deg, -31deg);
+  -ms-transform: scale(0.9) rotate(23deg) translate(7px, 7px)
+    skew(52deg, -31deg);
+  -o-transform: scale(0.9) rotate(23deg) translate(7px, 7px) skew(52deg, -31deg);
+  transform: scale(0.9) rotate(23deg) translate(7px, 7px) skew(52deg, -31deg);
+}
+
+.container4 {
+  display: flex;
+  height: auto;
+  width: 90%;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px;
+  border-radius: 50px;
+  padding: 50px;
+  text-align: center;
+  background-color: rgb(100, 186, 226);
+}
+
+.product_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.product_title {
+  margin: 50px;
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 100px;
+  padding: 10px;
+  font-family: "Bacasime Antique", serif;
+}
+.product_p {
+  color: aliceblue;
+  margin: 50px;
+  font-size: 50px;
+  padding: 10px;
+  font-family: "Bacasime Antique", serif;
+}
+
+.sorpresa {
+  margin-top: 100px;
+  width: 400px;
+  height: 200px;
+  background-color: (100, 186, 226);
+  transition: all 0.3s;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.sorpresa:hover {
+  background-image: url(./img/nosugar\ zoom.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.product_btn {
+  margin: 50px;
+  width: 250px;
+  height: 70px;
+  font-size: 25px;
+  text-decoration: none;
+  color: aliceblue;
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-box-shadow: 11px 2px 26px -4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 11px 2px 26px -4px rgba(0, 0, 0, 1);
+  box-shadow: 11px 2px 26px -4px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: "Bacasime Antique", serif;
+}
+.product_btn:hover {
+  transform: scale(1.2);
+}
+.product_lata {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.product_lata:hover {
+  transform: scale(1.2);
+}
+
+.container5 {
+  display: flex;
+  height: 600px;
+  width: 90%;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin: 200px 20px 20px 20px;
+  padding: 50px;
+  text-align: center;
+  border: solid 3px;
+}
+
+.final_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.final_p {
+  color: aliceblue;
+  margin: 50px;
+  font-size: 30px;
+  padding: 10px;
+  font-family: "Bacasime Antique", serif;
+}
+.final_title {
+  margin: 50px;
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 40px;
+  padding: 10px;
+  font-family: "Bacasime Antique", serif;
+}
+.final_btn {
+  margin: 50px;
+  width: 250px;
+  height: 70px;
+  font-size: 20px;
+  text-decoration: none;
+  color: aliceblue;
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-box-shadow: 11px 2px 26px -4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 11px 2px 26px -4px rgba(0, 0, 0, 1);
+  box-shadow: 11px 2px 26px -4px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: "Bacasime Antique", serif;
+}
+.final_lata {
+  cursor: pointer;
+  transition: all 0.3s;
+  filter: drop-shadow(10px 20px 40px rgba(237, 241, 238, 0.5));
+}
+.final_lata:hover {
+  transform: scale(1.2);
+  transform: translate3d(-100px, -50px, 200px);
+}
+
+.pie {
+  position: relative;
+  background: #2c3e50;
+  height: 50vh;
+}
+
+.pie::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: -35%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 95px;
+  background-size: 95px 100%;
+  background-image: linear-gradient(135deg, #2c3e50 25%, transparent 25%),
+    linear-gradient(225deg, #2c3e50 25%, transparent 25%);
+  background-position: 0 0;
+}
+
+.pie {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.pie_box {
+  height: 400px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pie_box li {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+  font-weight: 800;
+  margin: 10px;
+  padding: 5px;
+  list-style-type: none;
+}
+.pie_box li a {
+  text-decoration: none;
+  color: black;
+}
+.pie_redes {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+.pie_title {
+  margin-bottom: 50px;
+}
+.pie_redes li {
+  display: inline-block;
+  padding: 5px;
+  list-style-type: none;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* este boton lo copie y lo pegue de la pagina https://uiverse.io/satyamchaudharydev/quick-chicken-50 */
+
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #c535b4;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
